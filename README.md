@@ -15,5 +15,5 @@ Repositório para projeto da disciplina de Empreendedorismo desenvolvido em **No
 
 3. Inicie o servidor:
    ```bash
-   npm server.js
+   node server.js
    ```
