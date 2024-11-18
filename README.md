@@ -4,7 +4,7 @@ Repositório para projeto da disciplina de Empreendedorismo desenvolvido em **No
 ## **Como Rodar o Projeto**
 1. Clone o repositório:
    ```bash
-   git clone <seu-repositório>
+   git clone <https://github.com/GustavoAragao/Gerador-DRE.git>
    cd Gerador-DRE
    ```
 
