@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário DRE - Lan House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        input[type="number"], select {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        .form-group input, .form-group select {
+            display: inline-block;
+            width: 48%;
+        }
+        .form-group input[type="number"] {
+            margin-right: 4%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Preencha os dados do DRE - Lan House</h1>
+    </header>
+
+    <div class="container">
+        <form action="/dre" method="POST">
+            <div class="form-group">
+                <label for="receitas">Receitas de Vendas:</label>
+                <input type="number" name="receitas" id="receitas" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="despesas">Despesas com Manutenção:</label>
+                <input type="number" name="despesas" id="despesas" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="impostos">Impostos sobre as Vendas:</label>
+                <input type="number" name="impostos" id="impostos" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="despesaFuncionario">Despesa com Funcionários:</label>
+                <input type="number" name="despesaFuncionario" id="despesaFuncionario" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="despesaAluguel">Despesa com Aluguel:</label>
+                <input type="number" name="despesaAluguel" id="despesaAluguel" step="0.01">
+            </div>
+
+            <div class="form-group">
+                <label for="despesaEnergia">Despesa com Energia Elétrica:</label>
+                <input type="number" name="despesaEnergia" id="despesaEnergia" step="0.01">
+            </div>
+
+            <button type="submit">Calcular DRE</button>
+        </form>
+    </div>
+</body>
+</html>
